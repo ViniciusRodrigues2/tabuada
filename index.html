@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="enclobar">
+    <button onclick="criarTabuada()">criar tabuada</button>
+    <button onclick="limparTabuada()">limpar tabuada</button>
+    <div id="res">
+
+    </div>
+    </div>
+
+    <script>
+       let res = document.querySelector('#res');
+       function criarTabuada(){
+           let numero = parseFloat(prompt('digite um numero: '));
+           if(!(numero === numero)){
+               alert(`digite numeros,letras não são permitido`);
+           }
+            limparTabuada();
+           for(var i = 1; i <= 20; i++ ){
+            mensagem += `${numero} x ${i} = `+(numero * i) + '<br>'
+           }
+           mensagem.innerHTML = 'ffff';
+           res.innerHTML += mensagem;
+
+       }
+       function limparTabuada(){
+           mensagem = '';
+           res.innerHTML = mensagem;
+       }
+       let mensagem = '';
+    </script>
+</body>
+</html>

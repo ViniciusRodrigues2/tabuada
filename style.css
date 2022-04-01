@@ -1,0 +1,65 @@
+@charset "UTF-8";
+body{
+    height:120vh;
+    width: 100%;
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.582)),url('https://th.bing.com/th/id/R.be7c5fa785da0019fe2588130a17ca7c?rik=i%2bCxtXV%2fJ9iAfQ&pid=ImgRaw&r=0');
+    background-size: cover;
+
+}
+#res{
+    background-color: rgb(87, 87, 87);
+    font-size: 1.2em;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    padding: 8px 15px;
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: 0em auto;
+    height: 80vh;
+    border-radius: 40px;
+    box-shadow: inset 4px 4px 40px rgba(0, 0, 0, 0.363),inset -4px -4px 40px rgba(0, 0, 0, 0.596), 10px 20px 50px rgb(65, 65, 65);
+}
+button{
+    display: block;
+    width: 18%;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #fd7232;
+    border: none;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 800;
+    font-family: initial;
+}
+button:nth-child(2){
+    background-color: rgb(79, 79, 170);
+}
+@media  screen and (max-width:600px) {
+    body{
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .enclobar{
+        width: 40%;
+        display: block;
+        margin: 20px auto;
+    }
+    #res{
+        background-color: #c9c6c6;
+        width: 100%;
+        margin: 0;
+        height: 60%;
+        font-size: 25px;
+        padding: 20px 20px;
+        color: rgb(68, 68, 68);
+    }
+    button{
+        display: block;
+        width: 100%;
+        font-size: 35px;
+        margin-bottom: 1.3em;
+    }
+}
